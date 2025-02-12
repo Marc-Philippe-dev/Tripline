@@ -35,7 +35,7 @@ export default function RootLayout({
           <Navbar />
         </div>
 
-        <main className="absolute top-[30%] left-0 right-0 px-8">
+        <main className="absolute top-[20%] left-0 right-0 px-8">
           {children}
         </main>
 

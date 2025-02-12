@@ -6,7 +6,7 @@ export default function Home() {
     <>
       {/* Hero section */}
       <section>
-        <div className="container m-auto grid grid-cols-1 md:grid-cols-2 items-center">
+        <div className="container m-auto min-h-[80vh] grid grid-cols-1 md:grid-cols-2 items-center">
           <div>
             <h1>
               Transformez vos aventures en souvenirs inoubliables. Et partagez
@@ -30,7 +30,7 @@ export default function Home() {
 
       {/*  */}
       <section>
-        <div className="container m-auto grid grid-cols-1 md:grid-cols-2 items-center">
+        <div className="container m-auto min-h-[80vh] grid grid-cols-1 md:grid-cols-2 items-center">
           <div>
             <Image
               src="/illustration.svg"
@@ -103,7 +103,7 @@ export default function Home() {
 
       {/*  */}
       <section>
-        <div className="container m-auto grid grid-cols-1 md:grid-cols-2 items-center">
+        <div className="container m-auto min-h-[80vh] grid grid-cols-1 md:grid-cols-2 items-center">
           <div>
             <h2>Contact</h2>
             <p className=" mt-6">Veuillez nous laisser vos préoccupations</p>

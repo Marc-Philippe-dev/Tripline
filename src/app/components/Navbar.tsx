@@ -21,8 +21,7 @@ export default function Navbar() {
             </li>
           </ul>
           <Button className="bg-secondary hover:bg-secondary">
-            {" "}
-            S'inscrire{" "}
+            <Link href="">S'inscrire </Link>
           </Button>
         </div>
         <Menu size={24} className="md:hidden" />

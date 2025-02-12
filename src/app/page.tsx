@@ -1,58 +1,128 @@
 import Image from "next/image";
+import { Input } from "@/components/ui/input";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        
-      </main>
-      {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer> */}
-    </div>
+    <>
+      {/* Hero section */}
+      <section>
+        <div className="container m-auto grid grid-cols-1 md:grid-cols-2 items-center">
+          <div>
+            <h1>
+              Transformez vos aventures en souvenirs inoubliables. Et partagez
+              les.
+            </h1>
+            <p className=" mt-6">
+              Les expériences de voyage deviennent plus précieuses lorsque nous
+              les partageons
+            </p>
+          </div>
+          <div>
+            <Image
+              src="/hero-image.svg"
+              alt="hero image"
+              width={500}
+              height={500}
+            ></Image>
+          </div>
+        </div>
+      </section>
+
+      {/*  */}
+      <section>
+        <div className="container m-auto grid grid-cols-1 md:grid-cols-2 items-center">
+          <div>
+            <Image
+              src="/illustration.svg"
+              alt="people with suitcase "
+              width={500}
+              height={500}
+            ></Image>
+          </div>
+
+          <div>
+            <h2>Mission</h2>
+            <p>
+              Nous croyons que chaque voyage est une histoire unique qui mérite
+              d'être racontée. Nous visons:
+            </p>
+
+            <div className="space-y-4 mt-6 bg-white p-4 rounded-lg shadow-2xl">
+              <div className="flex items-center space-x-4">
+                <Image
+                  src="/flight.svg"
+                  alt="checkmark"
+                  width={60}
+                  height={60}
+                ></Image>
+                <div>
+                  <h3>Authenticité</h3>
+                  <p>Encourager des récits de voyage sincères et personnels.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-4 mt-6 bg-white p-4 rounded-lg shadow-2xl">
+              <div className="flex items-center space-x-4">
+                <Image
+                  src="/simplicity.svg"
+                  alt="checkmark"
+                  width={60}
+                  height={60}
+                ></Image>
+                <div>
+                  <h3>Simplicité</h3>
+                  <p>
+                    Offrir une interface utilisateur intuitive et facile à
+                    utiliser.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-4 mt-6 bg-white p-4 rounded-lg shadow-2xl">
+              <div className="flex items-center space-x-4">
+                <Image
+                  src="/privacy.svg"
+                  alt="checkmark"
+                  width={60}
+                  height={60}
+                ></Image>
+                <div>
+                  <h3>Confidentialité</h3>
+                  <p>
+                    Garantir la protection des données et le contrôle total des
+                    utilisateurs sur leurs contenus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/*  */}
+      <section>
+        <div className="container m-auto grid grid-cols-1 md:grid-cols-2 items-center">
+          <div>
+            <h2>Contact</h2>
+            <p className=" mt-6">Veuillez nous laisser vos préoccupations</p>
+            <form action="" className="mt-6 space-y-4 w-96">
+               <Input type="text" placeholder="E-mail" />
+               <Input type="text" placeholder="Object" />
+               <Input type="text" placeholder="Saisir votre message " />
+            </form>
+          </div>
+          <div>
+            <Image
+              src="/selfie.svg"
+              alt="hero image"
+              width={500}
+              height={500}
+            ></Image>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

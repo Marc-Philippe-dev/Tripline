@@ -4,6 +4,7 @@ import "./globals.css";
 
 //Components
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 // Variables for the Geist Sans and Geist Mono fonts
 const geistSans = Geist({
@@ -29,16 +30,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
-      >
-        <div className="min-h-[70vh] linear-gradient">
-          <Navbar />
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}>
+        <div className="fixed inset-0 bg-gradient-to-t from-sky-300 to-indigo-200 -z-10" />
+
+        <div className="flex flex-col min-h-screen">
+          <div className="min-h-[20vh] mt-[2vh]">
+            <Navbar />
+          </div>
+
+          <main className="flex-1 px-8 mb-16">
+            {children}
+          </main>
+
+          <footer className="w-full py-4">
+            <Footer />
+          </footer>
         </div>
-
-        <main className="absolute top-[20%] left-0 right-0 px-8">
-          {children}
-        </main>
-
       </body>
     </html>
   );

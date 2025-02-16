@@ -6,7 +6,7 @@ export default function Home() {
     <>
       {/* Hero section */}
       <section>
-        <div className="container m-auto min-h-[80vh] grid grid-cols-1 md:grid-cols-2 items-center">
+        <div className="container m-auto min-h-[70vh] grid grid-cols-1 md:grid-cols-2 items-center">
           <div>
             <h1>
               Transformez vos aventures en souvenirs inoubliables. Et partagez
@@ -21,8 +21,8 @@ export default function Home() {
             <Image
               src="/hero-image.svg"
               alt="hero image"
-              width={500}
-              height={500}
+              width={1000}
+              height={1000}
             ></Image>
           </div>
         </div>
@@ -30,13 +30,13 @@ export default function Home() {
 
       {/*  */}
       <section>
-        <div className="container m-auto min-h-[80vh] grid grid-cols-1 md:grid-cols-2 items-center">
+        <div className="container m-auto min-h-[70vh] grid grid-cols-1 md:grid-cols-2 items-center">
           <div>
             <Image
               src="/illustration.svg"
               alt="people with suitcase "
-              width={500}
-              height={500}
+              width={650}
+              height={650}
             ></Image>
           </div>
 
@@ -44,7 +44,7 @@ export default function Home() {
             <h2>Mission</h2>
             <p>
               Nous croyons que chaque voyage est une histoire unique qui mérite
-              d'être racontée. Nous visons:
+              d'être racontée.
             </p>
 
             <div className="space-y-4 mt-6 bg-white p-4 rounded-lg shadow-2xl">
@@ -103,7 +103,7 @@ export default function Home() {
 
       {/*  */}
       <section>
-        <div className="container m-auto min-h-[80vh] grid grid-cols-1 md:grid-cols-2 items-center">
+        <div className="container m-auto min-h-[70vh] grid grid-cols-1 md:grid-cols-2 items-center">
           <div>
             <h2>Contact</h2>
             <p className=" mt-6">Veuillez nous laisser vos préoccupations</p>
@@ -117,8 +117,8 @@ export default function Home() {
             <Image
               src="/selfie.svg"
               alt="hero image"
-              width={500}
-              height={500}
+              width={650}
+              height={650}
             ></Image>
           </div>
         </div>

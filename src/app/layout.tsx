@@ -30,22 +30,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}>
-        <div className="fixed inset-0 bg-gradient-to-t from-sky-300 to-indigo-200 -z-10" />
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative grid grid-rows[auto_1fr_auto] min-h-screen `}>
 
-        <div className="flex flex-col min-h-screen">
-          <div className="min-h-[20vh] mt-[2vh]">
-            <Navbar />
-          </div>
-
-          <main className="flex-1 px-8 mb-16">
-            {children}
-          </main>
-
-          <footer className="w-full py-4">
-            <Footer />
-          </footer>
+        <div className="min-h-[20vh] mt-[2vh]">
+          <Navbar />
         </div>
+
+        <main className=" mb-16">
+          {children}
+        </main>
+
+        <footer className="w-full py-4">
+          <Footer />
+        </footer>
       </body>
     </html>
   );

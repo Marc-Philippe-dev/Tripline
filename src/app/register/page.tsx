@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Register() {
   return (
@@ -12,6 +14,12 @@ export default function Register() {
             <Input type="password" placeholder="Mot de passe" />
             <Input type="password" placeholder="Confirmer le mot de passe" />
           </form>
+          <Button className="bg-secondary hover:bg-secondary/50 my-10 space-y-4 w-96">
+            <Link href="">S'inscrire</Link>
+          </Button>
+          <p className="text-sm">Vous avez déjà un compte ?
+            <Link className="mx-3 text-blue-500" href="">Connectez-vous !</Link>
+          </p>
         </div>
         <div>
           <Image
@@ -22,6 +30,6 @@ export default function Register() {
           ></Image>
         </div>
       </div>
-    </section>
+    </section >
   );
 }

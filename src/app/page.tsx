@@ -4,8 +4,10 @@ import { Input } from "@/components/ui/input";
 export default function Home() {
   return (
     <>
+
       {/* Hero section */}
       <section>
+        <div className="absolute inset-x-0 top-0 h-[70vh] bg-gradient-to-t from-white via-cyan-50 to-sky-100 -z-10" />
         <div className="container m-auto min-h-[70vh] grid grid-cols-1 md:grid-cols-2 items-center">
           <div>
             <h1>
@@ -29,7 +31,8 @@ export default function Home() {
       </section>
 
       {/*  */}
-      <section>
+      <section className="relative">
+        <div className="absolute w-[70vw] h-[100vh] -top-40 rounded-full bg-gradient-to-r from-sky-100 via-cyan-50 to-white -z-10" />
         <div className="container m-auto min-h-[70vh] grid grid-cols-1 md:grid-cols-2 items-center">
           <div>
             <Image
@@ -108,9 +111,9 @@ export default function Home() {
             <h2>Contact</h2>
             <p className=" mt-6">Veuillez nous laisser vos préoccupations</p>
             <form action="" className="mt-6 space-y-4 w-96">
-               <Input type="text" placeholder="E-mail" />
-               <Input type="text" placeholder="Object" />
-               <Input type="text" placeholder="Saisir votre message " />
+              <Input type="text" placeholder="E-mail" />
+              <Input type="text" placeholder="Object" />
+              <Input type="text" placeholder="Saisir votre message " />
             </form>
           </div>
           <div>

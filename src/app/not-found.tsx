@@ -5,6 +5,7 @@ import Link from 'next/link'
 export default function Page404() {
   return (
     <section>
+      <div className="absolute inset-x-0 top-0 h-[70vh] bg-gradient-to-t from-white via-cyan-50 to-sky-100 -z-10" />
       <div className="container m-auto grid place-items-center max-h-[80vh]">
         <div>
           <Image
@@ -18,7 +19,7 @@ export default function Page404() {
           <h2>La page que vous cherchez n'existe pas.</h2>
         </div>
         <div>
-          <Button className="bg-secondary hover:bg-secondary hover:shadow-2xl rounded-full px-12 py-10 text-2xl">
+          <Button className="bg-secondary hover:bg-secondary hover:shadow-2xl rounded-full px-9 py-8 text-xl">
             <Link href="/">Retour à l'accueil</Link>
           </Button>
         </div>

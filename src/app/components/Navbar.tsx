@@ -8,10 +8,10 @@ export default function Navbar() {
     <div className="container m-auto">
       <nav className="flex justify-between items-center ml-2 mr-2 py-4 px-6 rounded-full bg-white shadow-2xl">
         <span className="text-black text-xl font-bold">Tripline</span>
-        
+
         <ul className="hidden md:flex items-center space-x-12">
           <li>
-            <Link href="">Acceuil</Link>
+            <Link href="/">Accueil</Link>
           </li>
           <li>
             <Link href="">Mission</Link>
@@ -23,10 +23,10 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center space-x-4">
           <Button variant="outline" className="border-2 border-primary text-primary hover:bg-primary/10">
-            <Link href="">Se connecter</Link>
+            <Link href="/login">Se connecter</Link>
           </Button>
           <Button className="bg-secondary hover:bg-secondary/50">
-            <Link href="">S'inscrire</Link>
+            <Link href="/register">S'inscrire</Link>
           </Button>
         </div>
 

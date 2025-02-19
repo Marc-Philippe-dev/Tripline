@@ -32,7 +32,7 @@ export default function Home() {
 
       {/*  */}
       <section className="relative">
-        <div className="absolute w-[70vw] h-[100vh] -top-40 rounded-full bg-gradient-to-r from-sky-100 via-cyan-50 to-white -z-10" />
+
         <div className="container m-auto min-h-[70vh] grid grid-cols-1 md:grid-cols-2 items-center">
           <div>
             <Image

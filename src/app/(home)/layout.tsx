@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 //Components
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+ 
 
 // Variables for the Geist Sans and Geist Mono fonts
 const geistSans = Geist({
@@ -30,9 +31,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative grid grid-rows[auto_1fr_auto] min-h-screen `}>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative grid grid-rows[auto_1fr_auto] min-h-screen wrapper`}>
 
-        <div className="min-h-[20vh] mt-[2vh]">
+        <div className="mt-10">
           <Navbar />
         </div>
 

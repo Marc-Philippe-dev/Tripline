@@ -6,10 +6,10 @@ import React from 'react'
 export default function Navbar() {
   return (
     <div className="container m-auto">
-      <nav className="flex justify-between items-center ml-2 mr-2 py-4 px-6 rounded-full bg-white shadow-2xl">
-        <span className="text-black text-xl font-bold">Tripline</span>
+      <nav className="flex justify-between items-center py-4 px-6 rounded-lg bg-white shadow-2xl">
+        <span className="text-primary text-xl font-bold">Tripline</span>
 
-        <ul className="hidden md:flex items-center space-x-12">
+        {/* <ul className="hidden md:flex items-center space-x-12">
           <li>
             <Link href="/">Accueil</Link>
           </li>
@@ -19,7 +19,7 @@ export default function Navbar() {
           <li>
             <Link href="">Contact</Link>
           </li>
-        </ul>
+        </ul> */}
 
         <div className="hidden md:flex items-center space-x-4">
           <Button variant="outline" className="border-2 border-primary text-primary hover:bg-primary/10">

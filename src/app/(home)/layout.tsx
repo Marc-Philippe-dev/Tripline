@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 //Components
- 
+
 
 // Variables for the Geist Sans and Geist Mono fonts
 const geistSans = Geist({
@@ -37,7 +37,7 @@ export default function RootLayout({
           <Navbar />
         </div>
 
-        <main className=" mb-16">
+        <main className="mt-10 mb-16">
           {children}
         </main>
 

@@ -1,7 +1,12 @@
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
+import Card from "../components/Card";
+
 
 export default function Home() {
+
+  const trips: ITrip[] = []
+
   return (
     <>
 
@@ -27,6 +32,13 @@ export default function Home() {
               height={1000}
             ></Image>
           </div>
+        </div>
+      </section>
+
+      {/*  */}
+      <section className="relative">
+        <div className="container m-auto min-h-[70vh] grid grid-cols-1 md:grid-cols-2 items-center">
+          <Card />
         </div>
       </section>
 

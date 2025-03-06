@@ -2,10 +2,61 @@ import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import Card from "../components/Card";
 
-
 export default function Home() {
 
-  const trips: ITrip[] = []
+    const trips: ITrip[] = [
+        {
+          title: "Paris",
+          coverImage: "/404.svg",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in accumsan risus, id placerat dolor. Curabitur purus ex, maximus vel dolor non, convallis pretium lectus. Integer sollicitudin sagittis mi id interdum. Duis metus quam, feugiat ut sodales ac, tristique ultricies nulla. Mauris vitae turpis purus. Cras congue nibh nisl, finibus auctor quam pretium eu. Cras eleifend dui in erat sollicitudin congue. Donec non mollis metus. Fusce vel nulla fringilla, facilisis felis non, tristique orci. Suspendisse quis tincidunt nulla. Integer vel vehicula odio, sit amet placerat nisi. "
+        },
+        {
+          title: "Tokyo",
+          coverImage: "/404.svg",
+          description: "Voyage au pays du soleil levant"
+        },
+        {
+          title: "New York",
+          coverImage: "/404.svg",
+          description: "La grande pomme"
+        },
+        {
+          title: "New York",
+          coverImage: "/404.svg",
+          description: "La grande pomme"
+        },
+        {
+          title: "New York",
+          coverImage: "/404.svg",
+          description: "La grande pomme"
+        },
+        {
+          title: "New York",
+          coverImage: "/404.svg",
+          description: "La grande pomme"
+        },
+        {
+          title: "New York",
+          coverImage: "/404.svg",
+          description: "La grande pomme"
+        },
+        {
+          title: "New York",
+          coverImage: "/404.svg",
+          description: "La grande pomme"
+        },
+        {
+          title: "New York",
+          coverImage: "/404.svg",
+          description: "La grande pomme"
+        },
+        {
+          title: "New York",
+          coverImage: "/404.svg",
+          description: "La grande pomme"
+        }
+      ];
+
 
   return (
     <>
@@ -16,8 +67,9 @@ export default function Home() {
         <div className="container m-auto min-h-[70vh] grid grid-cols-1 md:grid-cols-2 items-center">
           <div>
             <h1>
-              Transformez vos aventures en souvenirs inoubliables. Et partagez
-              les.
+              Transformez vos aventures en souvenirs inoubliables.
+                <br />
+              Et partagez les.
             </h1>
             <p className=" mt-6">
               Les expériences de voyage deviennent plus précieuses lorsque nous
@@ -35,10 +87,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/*  */}
+      {/* Trips carousel section */}
       <section className="relative">
-        <div className="container m-auto min-h-[70vh] grid grid-cols-1 md:grid-cols-2 items-center">
-          <Card />
+        <div className="container m-auto min-w-[80vw] px-2">
+          <div className="text-center mb-8">
+            <h2>Voyages récents</h2>
+            <p className="mt-2">Découvrez les dernières aventures partagées</p>
+          </div>
+          
+          <div className="flex overflow-x-auto space-x-6 pb-4">
+            {trips.map((trip, index) => (
+              <div key={index} className="flex-none w-65">
+                <Card 
+                  title={trip.title}
+                  description={trip.description}
+                  coverImage={trip.coverImage}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

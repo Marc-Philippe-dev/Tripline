@@ -1,8 +1,8 @@
 interface ITrip {
   title: string;
-  coverImage?: string;
+  coverImage: string;
   description: string;
-  startDate: Date;
-  endDate: Date;
-  userId: string
+  startDate?: Date;
+  endDate?: Date;
+  userId?: string
 }

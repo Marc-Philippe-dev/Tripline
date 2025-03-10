@@ -1,7 +1,10 @@
-import React from 'react'
+import ProtectedRoutes from "@/utils/protectedRoutes";
+import React from "react";
 
 export default function Dashboard() {
   return (
-	<div>Dashboard</div>
-  )
+    <ProtectedRoutes>
+      <div>Dashboard</div>
+    </ProtectedRoutes>
+  );
 }

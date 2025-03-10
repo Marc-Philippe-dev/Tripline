@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import DashboardSideBar from "./(components)/DashboardSideBar";
 import "../globals.css";
+import ProtectedRoutes from "@/utils/protectedRoutes";
 
 // Variables for the Geist Sans and Geist Mono fonts
 const geistSans = Geist({
@@ -29,18 +30,17 @@ export default function DashboardLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative grid grid-rows[auto_1fr_auto] min-h-screen wrapper  `}
       >
+        <ProtectedRoutes>
         <div className="grid grid-cols-5 grid-rows-10 gap-1 min-h-screen ">
           <div className="row-span-10 bg-blue-200/50 rounded-lg m-2">
-
             <DashboardSideBar />
           </div>
-          <div className="col-span-4 bg-blue-200/50 p-2 rounded-lg m-2">
-            2
-          </div>
+          <div className="col-span-4 bg-blue-200/50 p-2 rounded-lg m-2">2</div>
           <div className="col-span-4 row-span-9 col-start-2 p-6 row-start-2 bg-blue-200/50 rounded-lg m-2">
             {children}
           </div>
         </div>
+        </ProtectedRoutes >
       </body>
     </html>
   );

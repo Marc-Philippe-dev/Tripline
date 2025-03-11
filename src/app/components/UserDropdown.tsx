@@ -22,12 +22,12 @@ export default function UserDropdown() {
                         Mon compte
                     </div>
 
-                    <Link href="/profile" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    <Link href="/dashboard/profile" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                         <User className="mr-2 h-4 w-4" />
                         <span>Profil</span>
                     </Link>
                     
-                    <Link href="/settings" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    <Link href="/dashboard/settings" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                         <Settings className="mr-2 h-4 w-4" />
                         <span>Paramètres</span>
                     </Link>

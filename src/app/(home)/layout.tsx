@@ -36,19 +36,19 @@ export default function RootLayout({
         <BackgroundIcons />
 
         <div className="relative">
-            
 
-            <div className="mt-10">
-                <Navbar />
-            </div>
 
-            <main className="mt-10 mb-16">
-                {children}
-            </main>
+          <div className="mt-10">
+            <Navbar />
+          </div>
 
-            <footer className="w-full py-4">
-                <Footer />
-            </footer>
+          <main className="mt-10 mb-16">
+            {children}
+          </main>
+
+          <footer className="w-full py-4">
+            <Footer />
+          </footer>
         </div>
       </body>
     </html>

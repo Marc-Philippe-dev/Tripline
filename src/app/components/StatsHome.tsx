@@ -33,12 +33,12 @@ export default function InspiringStats() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full">
               {stats.map((stat, index) => (
                 <div
-                key={stat.id}
-                className="bg-white p-6 rounded-lg shadow-md"
-              >
-                <p className="text-4xl font-bold text-blue-600">{displayValues[index]}</p>
-                <p className="text-gray-600">{stat.label}</p>
-              </div>
+                  key={stat.id}
+                  className="bg-white p-6 rounded-lg shadow-md"
+                >
+                  <p className="text-4xl font-bold text-blue-600">{displayValues[index]}</p>
+                  <p className="text-gray-600">{stat.label}</p>
+                </div>
               ))}
             </div>
           </div>

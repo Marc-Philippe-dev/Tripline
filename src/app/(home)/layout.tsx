@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import BackgroundIcons from "../components/BackgroundIcons";
 
 //Components
 
@@ -32,18 +33,23 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative grid grid-rows[auto_1fr_auto] min-h-screen wrapper`}>
+        <BackgroundIcons />
 
-        <div className="mt-10">
-          <Navbar />
+        <div className="relative">
+            
+
+            <div className="mt-10">
+                <Navbar />
+            </div>
+
+            <main className="mt-10 mb-16">
+                {children}
+            </main>
+
+            <footer className="w-full py-4">
+                <Footer />
+            </footer>
         </div>
-
-        <main className="mt-10 mb-16">
-          {children}
-        </main>
-
-        <footer className="w-full py-4">
-          <Footer />
-        </footer>
       </body>
     </html>
   );

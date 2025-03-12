@@ -83,8 +83,8 @@ export default function Login() {
   return (
     <section>
       <ToastContainer />
-      <div className="container m-auto grid grid-cols-1 md:grid-cols-2 items-center">
-        <div className="container m-auto grid justify-items-center">
+      <div className="container m-auto grid grid-cols-1 md:grid-cols-2 items-center bg-white p-4 rounded-lg shadow-2xl">
+        <div className="container m-auto grid justify-items-center ">
           <h2>Se connecter</h2>
           <form onSubmit={handleSubmit} className="mt-6 space-y-4 w-96">
             <div>

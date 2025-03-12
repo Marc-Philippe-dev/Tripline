@@ -15,6 +15,7 @@ export default function Login() {
     email: "",
     password: "",
   });
+
   const [errors, setErrors] = useState({
     email: "",
     password: "",
@@ -51,6 +52,7 @@ export default function Login() {
             email: formData.email,
             password: formData.password,
           }),
+          credentials: "include",
         }
       );
 

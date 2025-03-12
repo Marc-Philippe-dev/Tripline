@@ -14,7 +14,9 @@ export default function Navbar() {
   return (
     <div className="container m-auto">
       <nav className="flex justify-between items-center py-4 px-6 rounded-lg bg-white shadow-2xl relative">
-        <span className="text-primary text-xl font-bold">Tripline</span>
+        <Button variant={'ghost'}>
+            <Link href="/" className="text-primary text-xl font-bold">Tripline</Link>
+        </Button>
 
         {/* Desktop menu */}
         <div className="hidden md:flex items-center space-x-4">

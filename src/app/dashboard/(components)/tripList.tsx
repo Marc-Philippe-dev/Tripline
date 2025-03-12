@@ -1,6 +1,6 @@
 "use client";
 import { getAllTrips, useTripStore } from "../../services/tripServices";
-import { ITrip } from "../../../models/trip";
+import { ITrip } from "../../../models/ITrip";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";

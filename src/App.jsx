@@ -4,7 +4,8 @@ import React from 'react'
 import Login from "./pages/Auth/Login";
 import SignUp from "./pages/Auth/SignUp";
 import Home from "./pages/Home/Home";
-import TriplinePage from "./assets/images/Landing";
+import TriplinePage from "./pages/Home/Landing";
+
 
 
 const App = () => {

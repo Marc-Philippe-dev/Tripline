@@ -6,7 +6,7 @@ import img2 from "../../assets/images/img2.png";
 import img3 from "../../assets/images/img3.png";
 import img4 from "../../assets/images/img4.png";
 import heroImage from "../../assets/images/hero.png";
-import coupleImage from "../../assets/images/couple_travelling.png";
+import coupleImage from "../../assets/images/couple_travelling.png"; 
 
 const TriplinePage = () => {
 

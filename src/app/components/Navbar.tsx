@@ -8,16 +8,21 @@ import UserDropdown from "./UserDropdown";
 import UserDropdownContent from "./UserDropdownContent";
 
 export default function Navbar() {
-  const isAuthenticated = false;
+  const isAuthenticated = true;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className="container m-auto">
       <nav className="flex justify-between items-center py-4 px-6 rounded-lg bg-white shadow-2xl relative">
+<<<<<<< HEAD
         <Button variant={"ghost"}>
           <Link href="/" className="text-primary text-xl font-bold">
             Tripline
           </Link>
+=======
+        <Button variant={'ghost'}>
+          <Link href="/" className="text-primary text-xl font-bold">Tripline</Link>
+>>>>>>> d8cc5e6394643418fe49dcc6803f8e95917c95ed
         </Button>
 
         {/* Desktop menu */}
@@ -40,6 +45,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile menu button */}
+<<<<<<< HEAD
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden p-2"
@@ -50,6 +56,17 @@ export default function Navbar() {
             <User size={24} className="text-primary" />
           ) : (
             <Menu size={24} className="text-primary" />
+=======
+        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden p-2">
+          {isMenuOpen ? (
+            <X size={24} className="text-primary" />
+          ) : (
+            isAuthenticated ? (
+              <User size={24} className="text-primary" />
+            ) : (
+              <Menu size={24} className="text-primary" />
+            )
+>>>>>>> d8cc5e6394643418fe49dcc6803f8e95917c95ed
           )}
         </button>
 

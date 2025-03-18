@@ -5,7 +5,7 @@ import {
   getAllTrips,
   useTripStore,
 } from "../../../services/tripServices";
-import { ITrip } from "../../../models/trip";
+import { ITrip } from "../../../models/ITrip";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Edit, Trash } from "lucide-react";

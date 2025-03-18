@@ -1,4 +1,5 @@
 import React from 'react'
+import { ITrip } from '../../models/ITrip'
 
 export default function Card(props: ITrip) {
 

@@ -6,13 +6,15 @@ import img2 from "../../assets/images/img2.png";
 import img3 from "../../assets/images/img3.png";
 import img4 from "../../assets/images/img4.png";
 import heroImage from "../../assets/images/hero.png";
-import coupleImage from "../../assets/images/couple_travelling.png"; 
+import coupleImage from "../../assets/images/couple_travelling.png";
 
 const TriplinePage = () => {
 
-	const navigate = useNavigate();
+  const navigate = useNavigate();
 
-	const isAuthenticated = !!localStorage.getItem("token");
+
+
+  const isAuthenticated = !!localStorage.getItem("token");
 
   return (
     <div className="bg-blue-50 min-h-screen font-sans">

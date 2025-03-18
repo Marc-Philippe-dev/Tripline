@@ -1,5 +1,5 @@
 import axios from "axios";
-import {ITrip } from "../../models/trip";
+import {ITrip } from "../models/trip";
 
 import { create } from "zustand";
 
@@ -14,10 +14,12 @@ interface TripStore {
 export const getAllTrips = async (): Promise<ITrip[]> => {
 	try {
 		const response = await axios.get(`${API_BASE_URL}/api/trips`, { withCredentials: true });
-		return response.data; // Return the list of trips
+		// Return the list of trips
+		return response.data; 
 	} catch (error) {
 		console.error("Error fetching trips:", error);
-		throw error; // Throw an error to be handled by the component
+		// Throw an error to be handled by the component
+		throw error; 
 	}
 };
 
@@ -26,3 +28,15 @@ export const useTripStore = create<TripStore>((set) => ({
 	selectedTripId: null,
 	setTripId: (id) => set({ selectedTripId: id }),
 }));
+
+export const deleteTrip = async (id:string): Promise<void> => {
+	try {
+		const response = await axios.delete(`${API_BASE_URL}/api/trips/${id}`, { withCredentials: true });
+		// Return the list of trips
+		return response.data; 
+	} catch (error) {
+		console.error("Error deleting this trip :", error);
+		// Throw an error to be handled by the component
+		throw error; 
+	}
+};

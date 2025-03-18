@@ -38,10 +38,12 @@ export default function DashboardSideBar() {
         <div className="  bg-secondary/80 hover:bg-secondary/100 px-2 py-4 rounded-lg ">
           <Link href="/" className="flex items-center gap-4 ">
             <LogOut className="text-gray-100" />
-            <span className="text-gray-100">Déconnexion</span>
+            <span className="text-gray-100" >Déconnexion</span>
           </Link>
         </div>
       </div>
     </div>
   );
 }
+
+

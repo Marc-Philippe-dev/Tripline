@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useTripStore } from "@/app/services/tripServices";
+import { useTripStore } from "@/services/tripServices";
 import { IEntry } from "@/models/IEntry";
 
 export default function TripDetailPage() {
@@ -37,7 +37,9 @@ export default function TripDetailPage() {
 
   return (
     <div className="p-6 bg-white rounded-lg shadow-lg">
-      <h1 className="text-2xl tex-gray-600 font-bold  text-center mb-8">Etapes du voyage</h1>
+      <h1 className="text-2xl tex-gray-600 font-bold  text-center mb-8">
+        Etapes du voyage
+      </h1>
 
       <div className="max-w-md rounded-md bg-primary/50 pb-8">
         {entries.length > 0 ? (
@@ -52,10 +54,11 @@ export default function TripDetailPage() {
               )}
 
               <div className="flex flex-col p-4 gap-2 ">
-                <h2 className="text-xl font-semibold">{entry.destinationName}</h2>
+                <h2 className="text-xl font-semibold">
+                  {entry.destinationName}
+                </h2>
                 <p className="mt-2">{entry.destinationDescription}</p>
               </div>
-
             </div>
           ))
         ) : (

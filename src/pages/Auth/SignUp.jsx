@@ -15,6 +15,8 @@ const SignUp = () => {
   const handleSignUp = async (e) => {
     e.preventDefault();
 
+
+
     if (!name) {
       setError("Veuillez entrer votre nom complet.");
       return;
